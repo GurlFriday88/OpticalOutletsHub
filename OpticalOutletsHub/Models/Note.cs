@@ -10,6 +10,8 @@ namespace OpticalOutletsHub.Models
 
         public int NoteID { get; set; }
 
+        public int ProviderID { get; set; }
+
 
         public string SavedPages { get; set; }
 
@@ -17,6 +19,6 @@ namespace OpticalOutletsHub.Models
 
         public string MiscNotes { get; set; }
 
-        public IList<Patient> Eligibility { get; set;   
+         
     }
 }

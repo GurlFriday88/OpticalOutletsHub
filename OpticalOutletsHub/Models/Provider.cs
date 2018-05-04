@@ -19,6 +19,7 @@ namespace OpticalOutletsHub.Models
 
         public string AuthNote { get; set; }
 
+        public IList<Patient> Eligibility { get; set; }
 
     }
 }
