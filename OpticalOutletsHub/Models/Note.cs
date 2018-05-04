@@ -17,6 +17,6 @@ namespace OpticalOutletsHub.Models
 
         public string MiscNotes { get; set; }
 
-        public IList<Patient> Eligibility { get; set; }
+        public IList<Patient> Eligibility { get; set;   
     }
 }
