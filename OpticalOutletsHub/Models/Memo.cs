@@ -7,9 +7,9 @@ namespace OpticalOutletsHub.Models
 {
     public class Memo
     {
-        public int MemoID { get; set; }
+        public virtual int MemoID { get; set; }
 
-        public IList<MemoCategories> MemoItems { get; set; }
+        public virtual List<MemoCategories> MemoItems { get; set; }
 
     }
 }

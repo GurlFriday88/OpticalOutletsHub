@@ -7,14 +7,14 @@ namespace OpticalOutletsHub.Models
 {
     public class MemoCategories
     {
-        public int MemoCategoryID { get; set; }
+        public virtual int MemoCategoryID { get; set; }
 
         //Look back over one to many relationships to figure out which classes get what properties before building ef
 
-        public int MemoID { get; set; }
+        public virtual int MemoID { get; set; }
 
-        public string MemoName { get; set; }
+        public virtual string MemoName { get; set; }
 
-        public string Description { get; set; }
+        public virtual string Description { get; set; }
     }
 }

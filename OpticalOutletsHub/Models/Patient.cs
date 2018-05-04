@@ -7,14 +7,16 @@ namespace OpticalOutletsHub.Models
 {
     public class Patient
     {
-        public int PatientID { get; set; }
+        public virtual int PatientID { get; set; }
 
-        public string PatientType { get; set; }
+        public virtual int ProviderID { get; set; }
 
-        public string Exam { get; set; }
+        public virtual string PatientType { get; set; }
 
-        public string Frame { get; set; }
+        public virtual string Exam { get; set; }
 
-        public string Lens { get; set; }
+        public virtual string Frame { get; set; }
+
+        public virtual string Lens { get; set; }
     }
 }

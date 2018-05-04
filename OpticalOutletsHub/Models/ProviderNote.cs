@@ -7,12 +7,14 @@ namespace OpticalOutletsHub.Models
 {
     public class ProviderNote
     {
-        public int ProviderNoteID { get; set; }
+        public virtual int ProviderNoteID { get; set; }
 
-        public int NoteID { get; set; }
+        public virtual int NoteID { get; set; }
 
-        public int ProviderID { get; set; }
+        public virtual int ProviderID { get; set; }
 
-        public int PrefixID { get; set; }
+        public virtual Provider Provider { get; set; }
+
+
     }
 }

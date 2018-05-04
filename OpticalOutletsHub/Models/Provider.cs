@@ -7,19 +7,21 @@ namespace OpticalOutletsHub.Models
 {
     public class Provider
     {
-        public int ProviderID { get; set; }
+        public virtual int ProviderID { get; set; }
 
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
 
-        public string PhoneNumber { get; set; }
+        public virtual int PhoneNumber { get; set; }
 
-        public string SubscriberNumber { get; set; }
+        public virtual string SubscriberNumber { get; set; }
 
-        public string BenefitRenewal { get; set; }
+        public virtual string BenefitRenewal { get; set; }
 
-        public string AuthNote { get; set; }
+        public virtual string AuthNote { get; set; }
 
-        public IList<Patient> Eligibility { get; set; }
+        public virtual List<Patient> Patients { get; set; }
+
+        public virtual List<BcbsPrefix> BcbsPrefixes { get; set; }
 
     }
 }

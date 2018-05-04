@@ -7,10 +7,12 @@ namespace OpticalOutletsHub.Models
 {
     public class BcbsPrefix
     {
-        public int PrefixID { get; set; }
+        public virtual int PrefixID { get; set; }
 
-        public string PrefixName { get; set; }
+        public virtual int ProviderID { get; set; }
 
-        public int ProviderID { get; set; }
+        public virtual string PrefixName { get; set; }
+
+        public virtual Provider Provider { get; set; }
     }
 }

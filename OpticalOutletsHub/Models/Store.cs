@@ -7,18 +7,18 @@ namespace OpticalOutletsHub.Models
 {
     public class Store
     {
-        public int StoreID { get; set; }
+        public virtual int StoreID { get; set; }
 
-        public string StoreName { get; set; }
+        public virtual string StoreName { get; set; }
 
-        public string Address { get; set; }
+        public virtual string Address { get; set; }
 
-        public string City { get; set; }
+        public virtual string City { get; set; }
 
-        public string State { get; set; }
+        public virtual string State { get; set; }
 
-        public int ZipCode { get; set; }
+        public virtual int ZipCode { get; set; }
 
-        public int PhoneNumber { get; set; }
+        public virtual int PhoneNumber { get; set; }
     }
 }

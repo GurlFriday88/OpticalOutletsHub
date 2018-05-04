@@ -8,17 +8,16 @@ namespace OpticalOutletsHub.Models
     public class Note
     {
 
-        public int NoteID { get; set; }
+        public virtual int NoteID { get; set; }
 
-        public int ProviderID { get; set; }
+        public virtual int ProviderID { get; set; }
 
 
-        public string SavedPages { get; set; }
+        public virtual string SavedPage { get; set; }
 
-        public IList<Provider> Location { get; set; }
 
-        public string MiscNotes { get; set; }
+        public virtual string MiscNotes { get; set; }
 
-         
+
     }
 }
