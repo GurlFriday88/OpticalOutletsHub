@@ -11,7 +11,7 @@ namespace OpticalOutletsHub.Models
 
         public virtual string Name { get; set; }
 
-        public virtual int PhoneNumber { get; set; }
+        public virtual string PhoneNumber { get; set; }
 
         public virtual string SubscriberNumber { get; set; }
 
@@ -19,9 +19,17 @@ namespace OpticalOutletsHub.Models
 
         public virtual string AuthNote { get; set; }
 
-        public virtual List<Patient> Patients { get; set; }
+        public virtual int NumPagesToSave { get; set; }
 
-        public virtual List<BcbsPrefix> BcbsPrefixes { get; set; }
+        public string DescriptionPagesToSave { get; set; }
+
+        public virtual string MiscNotes { get; set; }
+
+        //One to many relationship between provider and BCBS prefixes because a provider can belong to many prefixes
+
+        public IList<Patient> Patients { get; set; }
+
+        public virtual IList<BcbsPrefix> BcbsPrefixes { get; set; }
 
     }
 }

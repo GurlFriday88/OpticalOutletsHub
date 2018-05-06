@@ -9,8 +9,6 @@ namespace OpticalOutletsHub.Models
     {
         public virtual int PatientID { get; set; }
 
-        public virtual int ProviderID { get; set; }
-
         public virtual string PatientType { get; set; }
 
         public virtual string Exam { get; set; }
@@ -18,5 +16,11 @@ namespace OpticalOutletsHub.Models
         public virtual string Frame { get; set; }
 
         public virtual string Lens { get; set; }
+
+        //one to many relationship between provider and patient
+
+        public virtual int ProviderID { get; set; }
+
+       
     }
 }

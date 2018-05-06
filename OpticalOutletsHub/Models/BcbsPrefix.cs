@@ -7,12 +7,15 @@ namespace OpticalOutletsHub.Models
 {
     public class BcbsPrefix
     {
-        public virtual int PrefixID { get; set; }
+        public int ID { get; set; }
 
-        public virtual int ProviderID { get; set; }
+        
+        public string Prefix { get; set; }
 
-        public virtual string PrefixName { get; set; }
+        //foreign key linking a provider to a prefix
 
-        public virtual Provider Provider { get; set; }
+        public int ProviderID { get; set; }
+
+        public Provider Provider { get; set; }
     }
 }

@@ -9,7 +9,14 @@ namespace OpticalOutletsHub.Models
     {
         public virtual int MemoID { get; set; }
 
-        public virtual List<MemoCategories> MemoItems { get; set; }
+        //A category can belong to several memos but there can only be one of each category to a memo at a time so there is a one to many relationship between the two 
+
+        public int MemoCategoryID { get; set; }
+
+        public virtual List<MemoCategories> MemoChoices { get; set; }
+
+       
+
 
     }
 }

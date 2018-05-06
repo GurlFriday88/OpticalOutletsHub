@@ -19,6 +19,6 @@ namespace OpticalOutletsHub.Models
 
         public virtual int ZipCode { get; set; }
 
-        public virtual int PhoneNumber { get; set; }
+        public virtual string PhoneNumber { get; set; }
     }
 }
